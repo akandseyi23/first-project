@@ -1,0 +1,413 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: rgb(249, 249, 249);
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 60px;
+        background: rgb(255, 255, 255);
+        /* position: sticky; */
+        /* top: 0; */
+        /* z-index: 1000; */
+        /* border-bottom: 1px solid rgb(238, 238, 238); */
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 35px;
+        position: relative;
+    }
+
+    .nav-links li {
+        position: relative;
+        display: block;
+        /* display: none; */
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-family: Moderat, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        color: rgb(38, 44, 85);
+    }
+
+    .dropdown:hover .menu {
+        display: block;
+    }
+
+    .dropdown:hover .menured {
+        display: block;
+    }
+
+    .dropdown:hover .menublue {
+        display: block;
+    }
+
+    .dropdown:hover .menuyellow {
+        display: block;
+    }
+
+    .dropup:hover .row {
+        display: block;
+    }
+
+    .menugreen {
+        display: none;
+        position: absolute;
+        /* top: 45px; */
+        left: 0;
+        background: rgb(255, 255, 255);
+        padding: 30px;
+        width: 400px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.377);
+        border-radius: 8px;
+        gap: 50px;
+    }
+
+    .menublue {
+        display: none;
+        position: absolute;
+        /* top: 45px; */
+        left: 0;
+        background: rgb(255, 255, 255);
+        padding: 30px;
+        width: 400px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.377);
+        border-radius: 8px;
+        gap: 50px;
+    }
+
+    .menured {
+        display: none;
+        position: absolute;
+        /* top: 45px; */
+        left: 0;
+        background: rgb(255, 255, 255);
+        padding: 30px;
+        width: 230px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.377);
+        border-radius: 8px;
+        gap: 50px;
+    }
+
+    .menuyellow {
+        display: none;
+        position: absolute;
+        /* top: 45px; */
+        left: 0;
+        background: rgb(255, 255, 255);
+        padding: 30px;
+        width: 400px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.377);
+        border-radius: 8px;
+        gap: 50px;
+    }
+
+    .menu {
+        /* display: block; */
+        display: none;
+        position: absolute;
+        /* top: 45px; */
+        left: 0;
+        background: rgb(255, 255, 255);
+        padding: 30px;
+        width: 205px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.377);
+        border-radius: 8px;
+        gap: 50px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .row a {
+        text-decoration: none;
+        font-family: Moderat, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+        color: rgb(25, 86, 114);
+    }
+
+    .row p {
+        font-family: Moderat, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: rgb(0, 0, 0);
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .column h4 {
+        /* background-color: rgb(214, 214, 214); */
+        font-family: Moderat, sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 19px;
+        color: rgb(38, 44, 85);
+        /* margin-bottom: px; */
+        /* border-radius: 5px; */
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+        /* border: 2px solid black; */
+        /* border-radius: ; */
+    }
+
+    .column h4:hover {
+        background-color: rgb(214, 214, 214);
+        border-radius: 5px;
+    }
+
+    .column a {
+        text-decoration: none;
+        font-family: Moderat, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+        color: rgb(25, 86, 114);
+    }
+
+    .column a:hover {
+        color: aqua;
+    }
+
+    .column p {
+        font-family: Moderat, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: rgb(0, 0, 0);
+    }
+
+    .column .qr {
+        width: 50px;
+    }
+
+    .column .qr-p {
+        /* text-align: center; */
+        border: 2px dotted black;
+        border-radius: 5px;
+        padding: 6px;
+    }
+
+    .column .swap {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .login {
+        font-weight: 500;
+        background-color: rgb(237, 237, 237);
+        color: rgb(38, 44, 84);
+        border: none;
+        width: 150px;
+        height: 50px;
+        border-radius: 15px;
+    }
+
+    .login:hover {
+        background-color: rgb(38, 44, 85);
+        color: white;
+    }
+
+    .endless {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 50px;
+
+    }
+
+    .endless h1 {
+        font-family: Millik, sans-serif;
+        font-size: 90px;
+        font-weight: 600;
+        line-height: 108px;
+        color: rgb(251, 145, 41);
+    }
+
+    .endless .for {
+        font-family: Millik, sans-serif;
+        font-size: 90px;
+        font-weight: 600;
+        line-height: 108px;
+        color: rgb(0, 0, 0);
+    }
+
+    .endless p {
+        font-family: Moderat, sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 32px;
+        color: rgb(0, 0, 0);
+    }
+
+    .bttn {
+        border: none;
+        background-color: rgb(10, 14, 38);
+        color: white;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+
+    }
+
+    .btn {
+        border: none;
+        background-color: gainsboro;
+        color: rgb(10, 14, 38);
+        border-radius: 10px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .omo {
+        display: flex;
+        gap: 25px;
+        margin: 50px;
+    }
+
+    .sweet {
+        display: flex;
+        gap: 50px;
+    }
+
+    .sweet .iya {
+        width: 1000px;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .sweet .e25 {
+        width: 450px;
+        height: 500px;
+
+        /* margin-bottom: 200px; */
+    }
+
+    .sweet p {
+        font-family: Moderat, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 32px;
+        color: rgb(29, 29, 29);
+        /* margin-bottom: 10px; */
+        margin-top: 40px;
+    }
+
+    .trust {
+        margin: 50px;
+    }
+
+    .trust h1 {
+        font-family: Moderat, sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 32px;
+        color: rgb(29, 29, 29);
+    }
+
+    .images {
+        display: flex;
+        gap: 30px;
+        /* width: 100%; */
+        /* margin: auto; */
+    }
+
+    .uber img {
+        height: 30px;
+    }
+
+    .mtn img {
+        height: 30px;
+    }
+
+    .chipper img {
+        height: 30px;
+    }
+
+    .piggyvest img {
+        height: 30px;
+    }
+
+    .wise img {
+        height: 30px;
+    }
+
+    .microsoft img {
+        height: 30px;
+    }
+
+    .airpeace img {
+        height: 30px;
+    }
+
+    .endless2 {
+        margin-top: 250px;
+        margin-left: 50px;
+        /* display: flex; */
+    }
+
+    .endless2 h1 {
+        font-family: Millik, sans-serif;
+        font-size: 90px;
+        font-weight: 600;
+        line-height: 107.5px;
+        color: rgb(29, 29, 29);
+    }
+
+    .endless2 .for2 {
+        font-family: Millik, sans-serif;
+        font-size: 90px;
+        font-weight: 600;
+        line-height: 107.5px;
+        color: rgb(251, 145, 41);
+    }
+
+    .endless2 .ent {
+        font-family: Millik, sans-serif;
+        font-size: 90px;
+        font-weight: 600;
+        line-height: 107.5px;
+        color: rgb(251, 145, 41);
+    }
+
+    @media(max-width:1200px) {
+        .iya {
+            width: 550px;
+        }
+
+        .e25 {
+            width: 450px;
+        }
+    }
